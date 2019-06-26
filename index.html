@@ -1,0 +1,406 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">    
+<link href="css/nav.css" rel="stylesheet" type="text/css" media="all">    
+<style>
+body { margin:0;padding:0;font-family:Verdana;}
+
+#header {
+  box-sizing:border-box;-moz-box-sizing:border-box;
+  position:fixed;
+  z-index:3;
+  top:0;
+  width:100%;   
+  -webkit-box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+
+}
+
+.parallax {
+  position:relative;
+  z-index:1;
+  height:450px;
+}
+
+#trans1 {
+  background: url('images/e.jpg') no-repeat fixed;
+  height:530px;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#trans2 {
+  background: url('images/ban2.jpg') no-repeat center center fixed;
+  height:400px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* 
+#trans3 {
+  background: url('images/d.jpg') no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:350px;
+} */
+
+.txt {
+  font-family: 'Niconne', cursive;
+  font-size:55px;
+  color:#000;
+  width:auto;
+  background:#FD62A9;
+  background:rgba(255, 102, 153, 0.60);
+  padding:5px 10px;
+}
+.txt.right {
+  margin: 150px 100px 0 0;
+  float:right;
+  text-align:right;
+}
+.txt.left {
+  float:left;
+  text-align:left;
+  margin: 150px 0 0 100px;
+}
+
+.txt.sub {
+  font-size:50px;
+  line-height:175%;
+  font-weight:lighter;
+  letter-spacing:1.5px;
+  background:#000;
+  background:rgba(0,0,0,0.60);
+  font-size:25px;
+  color:#ccc;
+  margin: 0 100px 0 100px;
+}
+.content {
+  box-sizing:border-box;-moz-box-sizing:border-box;
+  position:relative;
+  z-index:2;
+     background:#FFF;
+  width:100%;
+
+  margin:0;
+  padding:10px 20px;
+  -webkit-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 6px 5px rgba(50, 50, 50, 0.75);
+  text-align:left;
+}
+
+.content.right {
+  text-align:right;
+}
+
+.content h2 { padding:0 25px; }
+.content p { padding:0 50px; }
+
+#footer {
+  text-align: center;
+  padding: 20px 0 20px;
+  box-sizing:border-box;-moz-box-sizing:border-box;
+  position:relative;
+  z-index:2;
+  color:white;
+  background:#273746;
+  width:100%;
+  height:auto;
+  margin:0;
+  -webkit-box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+}
+
+.con{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered
+{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.detail{
+	text-align: center;
+	font-size:1.5em;
+	text-transform:capitalize;
+	color:#212121;
+	letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+<div id="header">
+<div class="topnav" id="myTopnav">
+<a href="index.html" class="active">Home</a>
+<div class="dropdwn">
+  <button class="dropbtn">Category
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdwn-con">
+    <a href="girlsHostel.html">Girls Hostel</a>
+    <a href="#">Boys Hostel</a>
+  </div>
+</div> 
+<a href="#about">About</a>
+<a href="register.html">Register</a>
+<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+</div>
+<div class="parallax" id="trans1">
+<div class="centered con">
+  <h3>The</h3>
+  <h1>RENTAL SYSTEM</h1>
+  <h3>"BEST IN THE CITY"</h3>
+  </div>
+</div>
+
+<div class="content">
+<div class="gallery" id="gallery">
+<div class="container">
+    <h3>Properties</h3>
+    <div class="w3ls_gallery_grids">
+        <div class="col-md-4 w3_agile_gallery_grid">
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/Hostel_Dormitory.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>Hostels</h3>
+                            <p>Find best Hostels in Jabalpur.</p>
+                        </div>
+                        <div class="detail"><p>Hostels</p></div>
+                    </div>
+                </a>
+            </div>
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/shops.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>Shops</h3>
+                            <p>Find best shops in Jabalpur for rent.</p>
+                        </div>
+                        <div class="detail"><p>Shops</p></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4  w3_agile_gallery_grid">
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/abt3.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>PG</h3>
+                            <p>Find best PG in Jabalpur.</p>    
+                        
+                        </div>
+                        <div class="detail"><p>PG</p></div>
+                    </div>
+                </a>
+            </div>
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/c.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>Appartment</h3>
+                            <p>Find best appartment in Jabalpur.</p>
+                        </div>
+                        <div class="detail"><p>Appartment</p></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-md-4  w3_agile_gallery_grid">
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/flats.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>Flats</h3>
+                            <p>Find Flats in Jabalpur.</p>
+                        </div>
+                        <div class="detail"><p>Flats</p></div>
+                    </div>
+                </a>
+            </div>
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/properties1.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>Properties</h3>
+                            <p>Properties</p>
+                        </div>
+                        <div class="detail"><p>Properties</p></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</div>
+
+<div class="content">
+<div class="gallery" id="gallery">
+<div class="container">
+    <h3>Others</h3>
+<div class="w3ls_gallery_grids">
+        <div class="col-md-4 w3_agile_gallery_grid">
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/furniture1.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>Furniture</h3>
+                            <p>Find Furnitures in Jabalpur.</p>
+                        </div>
+                        <div class="detail"><p>Furnitures</p></div>
+                    </div>
+                </a>
+            </div>
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/electronic.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>Electronic Appliances</h3>
+                            <p>Find electronic appliances.</p>
+                        </div>
+                        <div class="detail"><p>Electronics</p></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4  w3_agile_gallery_grid">
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/fitness.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>Fitness Appliances</h3>
+                            <p>Find Fitness appliances.</p>    
+                        </div>
+                        <div class="detail"><p>Fitness Appliances</p></div>
+                    </div>
+                </a>
+            </div>
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/automobiles.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>AutoMobiles</h3>
+                            <p>Find Automobiles for rent.</p>
+                        </div>
+                        <div class="detail"><p>AutoMobiles</p></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-md-4  w3_agile_gallery_grid">
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/fashion.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>Fashion</h3>
+                            <p>Find Fashion items for rent.</p>
+                        </div>
+                        <div class="detail"><p>Fashion Items</p></div>
+                    </div>
+                </a>
+            </div>
+            <div class="agile_gallery_grid">
+                <a title="Donec sapien massa, placerat ac sodales ac, feugiat quis est." href="#">
+                    <div class="agile_gallery_grid1">
+                        <img src="images/g1.jpg" alt=" " class="img-responsive" />
+                        <div class="w3layouts_gallery_grid1_pos">
+                            <h3>Books</h3>
+                            <p>Find Books for rent in Jabalpur.</p>
+                        </div>
+                        <div class="detail"><p>Books</p></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+</div>
+
+    
+<div class="footer">
+<p>©rentalSystem.in</p>
+</div>
+
+<script>
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>
+
+<div style="clear:both;"></div>
+</div>
+
+<div class="parallax" id="trans2">
+  <!-- <div class="txt left">
+    The
+  </div>
+  <div style="clear:both;"></div>
+  <div class="txt left sub">
+    RENTAL SYSTEM
+  </div> -->
+</div>
+
+<div class="content right">
+  <img style="float:left;margin-top:10px;margin-left:15px;width:322;height:250;" src="images\c.jpg" alt="Mr and Mrs"/></a>
+  <h2>Online Rental System</h2>
+  <p>Main aim of this project is to reduce gap between showroom owners and clients. This application is a web portal project through which vendors will post their product details on website and provide solution for contact them. Users will enter website through search results and know details of products and contact show room owners. In present scenario internet had became best place for marketing different products through website.</p>
+  
+  <div style="clear:both;"></div>
+</div>
+
+<!-- <div class="parallax" id="trans3">
+  <div class="txt left">
+    and they lived...
+  </div>
+  <div style="clear:both;"></div>
+  <div class="txt left sub">
+    Happily Ever After
+  </div>
+</div> -->
+
+<div id="footer">
+  <p>©rentalSystem.in</p>
+</div>
+ </body>
+ </html>

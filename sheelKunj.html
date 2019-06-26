@@ -1,0 +1,313 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sheelkunj</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">    
+<link href="css/nav.css" rel="stylesheet" type="text/css" media="all">    
+
+<style>
+
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  margin: 0;
+  letter-spacing:0.1em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    width:100%;
+    height:80%;
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  padding:1.2%;
+  float: left;
+  width: 25%;
+  height:25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+#footer {
+  text-align: center;
+  padding: 20px 0 20px;
+  box-sizing:border-box;-moz-box-sizing:border-box;
+  position:relative;
+  z-index:2;
+  color:white;
+  background:#273746;
+  width:100%;
+  height:auto;
+  margin:0;
+  -webkit-box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 90px 6px 5px rgba(50, 50, 50, 0.75);
+}
+
+/* form */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.cntnr {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/* //form */
+</style>
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <div class="dropdwn">
+    <button class="dropbtn">Category
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdwn-con">
+      <a href="girlsHostel.html">Girls Hostel</a>
+      <a href="#">Boys Hostel</a>
+    </div>
+  </div> 
+  <a href="#about">About</a>
+  <a href="register.html">Register</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+<div class="container">
+<a href="#"><h2>Sheelkunj Girls Hostel</h2></a>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6" style="background-color:lavender;">
+    
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+    <img src="images/c.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+    <img src="images/c.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+    <img src="images/c.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+    <img src="images/c.jpg" style="width:100%">
+  </div>
+
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/c.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/c.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/c.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/c.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-sm-6">
+    <h1>Sheelkunj Girls Hostel</h1><hr>
+    <img src="images/location.jpg" style="height:30px; width:30px;" alt="">Sneh Nagar,Jabalpur,Madhya Pradesh,India 
+   <h2>Amenities</h2><hr>
+   <img src="images/food.png" style="height:30px; width:30px;" alt=""> &nbsp Breakfast <br><br>
+   <img src="images/food.png" style="height:30px; width:30px;" alt=""> &nbsp Lunch <br><br>
+   <img src="images/food.png" style="height:30px; width:30px;" alt=""> &nbsp Dinner <br><br>
+   <img src="images/wifi.jpg" style="height:30px; width:30px;" alt=""> &nbsp WiFi <br><br>
+   <img src="images/wardern.png" style="height:30px; width:30px;" alt=""> &nbsp Wardern <br><br>
+   <img src="images/sequrity.jpg" style="height:40px; width:40px;" alt=""> &nbsp Security <br><br>
+   <img src="images/parkinh.png" style="height:30px; width:30px;" alt=""> &nbsp Parking <br><br>
+   <img src="images/water.png" style="height:30px; width:30px;" alt=""> &nbsp Water Purifier <br><br>
+
+   <form action="post">
+ 
+<h3>Contact Form</h3>
+
+<div class="cntnr">
+  <form action="/action_page.php">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="fullname" placeholder="Your name..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="lname" name="mail" placeholder="Your Email here..">
+
+    <label for="subject">Review</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  
+   </form>
+    </div>
+ </div>
+</div>
+
+<div id="footer">
+  <p>©rentalSystem.in</p>
+</div>
+
+
+   <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
+    
+    
